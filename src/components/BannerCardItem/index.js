@@ -5,14 +5,12 @@ const ReusableBanners = props => {
   const {bannerCardsList} = props
   const {headerText, description, className} = bannerCardsList
   return (
-    <li>
-      <div className={`card ${className}`}>
+    <li className={`card ${className}`}>
         <div>
           <h1 className="heading">{headerText}</h1>
           <p className="para">{description}</p>
           <Btn />
         </div>
-      </div>
     </li>
   )
 }
